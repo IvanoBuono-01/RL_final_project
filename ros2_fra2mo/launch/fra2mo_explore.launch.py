@@ -1,17 +1,11 @@
-import os
-
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
-from ament_index_python.packages import get_package_share_directory
-from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    rviz_config_file = os.path.join(get_package_share_directory('ros2_fra2mo'), 'rviz_conf', 'explore.rviz')
-    
     fra2mo_dir = FindPackageShare('ros2_fra2mo')
     nav2_bringup_dir = FindPackageShare('nav2_bringup')
     explore_lite_launch = PathJoinSubstitution(
@@ -54,16 +48,6 @@ def generate_launch_description():
             'use_sim_time': use_sim_time,
         }.items(),
     )
-    
-    # Nodo RViz2
-    rviz_node = Node(
-        package='rviz2',
-        executable='rviz2',
-        name='rviz2',
-        arguments=['-d', rviz_config_file],
-        parameters=[{'use_sim_time': use_sim_time}],
-        output='screen'
-    )
 
     return LaunchDescription(
         [
@@ -72,6 +56,5 @@ def generate_launch_description():
             slam_launch,
             nav2_bringup_launch,
             explore_lite_launch,
-            rviz_node,
         ]
     )

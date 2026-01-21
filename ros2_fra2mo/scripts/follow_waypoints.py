@@ -9,8 +9,8 @@ import yaml
 waypoints = yaml.safe_load('''
 waypoints:
   - position:
-      x: 3.8
-      y: 0.0
+      x: 5.7
+      y: 0.4
       z: 0.0
     orientation:
       x: 0.0
@@ -18,8 +18,8 @@ waypoints:
       z: -0.0055409271259092485
       w: 0.9999846489454652
   - position:
-      x: 4.10
-      y: -6.5
+      x: 5.7
+      y: -7.2
       z: 0.0
     orientation:
       x: 0.0
@@ -27,8 +27,8 @@ waypoints:
       z: 0.010695864295550759
       w: 0.9999427976074288
   - position:
-      x: 1.10
-      y: -3.4
+      x: 8.1
+      y: -6.8
       z: 0.0
     orientation:
       x: 0.0
@@ -36,8 +36,26 @@ waypoints:
       z: 0.01899610435153287
       w: 0.9998195577300264
   - position:
-      x: -0.5
-      y: -2.7
+      x: 8.8
+      y: 0.5
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.01899610435153287
+      w: 0.9998195577300264
+  - position:
+      x: 16.0
+      y: 0.88
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.01899610435153287
+      w: 0.9998195577300264
+  - position:
+      x: 16.0
+      y: -7.1
       z: 0.0
     orientation:
       x: 0.0

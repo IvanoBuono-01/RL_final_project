@@ -13,8 +13,7 @@
   <xacro:fra2mo_base/>
   
   <!-- Cassone trainato -->
-  <!-- <xacro:fra2mo_trailer parent_link="base_link"/> -->
-
+  <xacro:fra2mo_trailer parent_link="base_link"/> 
   <!-- LIDAR Sensor--> 
   <xacro:if value="${LIDAR}">
     <xacro:lidar_gazebo_sensor parent="lidar_link"/>

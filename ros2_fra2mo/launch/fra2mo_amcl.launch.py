@@ -20,7 +20,7 @@ def generate_launch_description():
 
     map_file_arg = DeclareLaunchArgument(
         "map_file",
-        default_value=PathJoinSubstitution([FindPackageShare("ros2_fra2mo"), "maps", "custom.yaml"]),
+        default_value=PathJoinSubstitution([FindPackageShare("ros2_fra2mo"), "maps", "PROJECT_WORLD.yaml"]),
         description="Full path to the yaml map file",
     )
 

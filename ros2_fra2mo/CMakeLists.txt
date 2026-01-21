@@ -17,9 +17,11 @@ find_package(urdf REQUIRED)
 find_package(xacro REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 add_executable(dynamic_tf_publisher src/odom_bl_tf.cpp)
-ament_target_dependencies(dynamic_tf_publisher rclcpp nav_msgs geometry_msgs tf2 tf2_ros)
+ament_target_dependencies(dynamic_tf_publisher rclcpp nav_msgs geometry_msgs sensor_msgs tf2 tf2_ros)
 
 # Installa i file necessari
 install(DIRECTORY launch urdf models meshes worlds config src maps scripts rviz_conf

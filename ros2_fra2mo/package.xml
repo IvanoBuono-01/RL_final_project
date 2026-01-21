@@ -13,6 +13,9 @@
   <depend>robot_state_publisher</depend>
   <depend>joint_state_publisher</depend>
 
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+
   <!-- Dipendenze di build -->
   <build_depend>geometry_msgs</build_depend>
   <build_depend>rclcpp</build_depend>
@@ -32,6 +35,8 @@
   <build_export_depend>tf2_ros</build_export_depend>
   <build_export_depend>urdf</build_export_depend>
   <build_export_depend>xacro</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <build_export_depend>nav_msgs</build_export_depend>
 
   <!-- Dipendenze di esecuzione -->
   <exec_depend>geometry_msgs</exec_depend>
@@ -44,6 +49,7 @@
   <exec_depend>urdf</exec_depend>
   <exec_depend>xacro</exec_depend>
   <exec_depend>robot_localization</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
