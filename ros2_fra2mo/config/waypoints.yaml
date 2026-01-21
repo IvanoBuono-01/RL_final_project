@@ -1,0 +1,44 @@
+waypoints:
+  - name: "Goal_1"
+    position:
+      x: 3.8
+      y: 0.0
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: -0.0055409271259092485
+      w: 0.9999846489454652
+  - name: "Goal_2"
+    position:
+      x: 4.10
+      y: -6.5
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.010695864295550759
+      w: 0.9999427976074288
+  - name: "Goal_3"
+    position:
+      x: 1.10
+      y: -3.4
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.01899610435153287
+      w: 0.9998195577300264
+  - name: "Goal_4"
+    position:
+      x: -0.5
+      y: -2.7
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.01899610435153287
+      w: 0.9998195577300264
+
+mode:
+  - strategy: "path"  # "path" / "explore" / "aruco"
